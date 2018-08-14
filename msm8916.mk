@@ -18,12 +18,7 @@
 $(call inherit-product, vendor/asus/msm8916-common/msm8916-common-vendor.mk)
 
 # Overlay
-DEVICE_PACKAGE_OVERLAYS += \
-    $(LOCAL_PATH)/overlay \
-    $(LOCAL_PATH)/overlay-lineage
-
-PRODUCT_ENFORCE_RRO_TARGETS := \
-    framework-res
+DEVICE_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay
 
 # Permissions
 PRODUCT_COPY_FILES += \
@@ -113,7 +108,7 @@ PRODUCT_PACKAGES += \
     bspcapability \
     camera.msm8916 \
     libshims_camera \
-    Snap
+    Camera2
 
 # Connectivity Engine support
 PRODUCT_PACKAGES += \
@@ -237,11 +232,6 @@ PRODUCT_PACKAGES += \
     init.recovery.qcom.rc \
     ueventd.qcom.rc
 
-# Recovery
-PRODUCT_PACKAGES += \
-    librecovery_updater_asus \
-    resize2fs_static
-
 # Releasetools
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/releasetools/init.asus.sh:install/bin/init.asus.sh
@@ -323,6 +313,7 @@ PRODUCT_PACKAGES += \
     wificond
 
 PRODUCT_PACKAGES += \
+    libwifi-hal-qcom \
     hostapd \
     wpa_supplicant \
     wpa_supplicant.conf
