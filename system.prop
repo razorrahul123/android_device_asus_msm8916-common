@@ -78,7 +78,6 @@ persist.dbg.vt_avail_ovr=1
 mm.enable.smoothstreaming=true
 mmp.enable.3g2=true
 media.aac_51_output_enabled=true
-persist.media.treble_omx=false
 media.stagefright.legacyencoder=true
 media.stagefright.less-secure=true
 
