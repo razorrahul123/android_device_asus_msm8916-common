@@ -1,1 +1,8 @@
+
 Device tree for Asus MSM8916 devices
+Snapdragon 410 Processor
+Designed with both 32-bit and 64-bit CPU support, the Qualcomm® Snapdragon™ 410 processor supports both multi-SIM multimode 4G LTE for worldwide smartphones and versatile power efficiency for embedded applications.
+
+Thanks to all the developer for supporting the device after 5 years and keeping the custom rom community alive for buiding roms.
+
+Just clone and then use with the device tree and kernel specific to  your device.
